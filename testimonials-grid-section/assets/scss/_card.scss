@@ -1,0 +1,77 @@
+.card {
+    padding: 1.5em 2em;
+    background-color: $card-bg;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px 0 rgba(24, 32, 45, 0.2);
+    .card-header {
+        display: flex;
+        flex-direction: row;
+        .card-thumb {
+            .card-img {
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+            }
+        }
+        .card-user {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 2em;
+            .card-author {
+                font-size: $font-size-md;
+                font-weight: $font-weight-bold;
+            }
+        }
+    }
+    .card-title {
+        margin-top: 1em;
+        font-size: $h1-font-size;
+        font-weight: $font-weight-bold;
+        line-height: 1.25;
+    }
+    .card-content {
+        margin-top: 1.55em;
+        line-height: 1.75;
+    }
+    &.purple {
+        background-color: $card-bg-purple;
+        background-image: url(../img/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-position: 85% 0;
+        background-size: 8rem;
+        .card-header {
+            .card-thumb {
+                .card-img {
+                    border: 3px solid $card-img-border;
+                }
+            }
+        }
+    }
+    &.gray {
+        background-color: $card-bg-gray;
+    }
+    &.blue {
+        background-color: $card-bg-blue;
+        .card-header {
+            .card-thumb {
+                .card-img {
+                    border: 3px solid $card-bg-purple;
+                }
+            }
+        }
+    }
+    &.purple,
+    &.gray,
+    &.blue {
+        color: $white;
+        .card-content {
+            color: $gray-300;
+        }
+        .card-user {
+            .card-verified {
+                color: rgba(255, 255, 255, 0.6);
+            }
+        }
+    }
+}
