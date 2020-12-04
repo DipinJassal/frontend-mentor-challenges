@@ -1,6 +1,6 @@
 # Frontend Mentor - Testimonials Grid Section
 
-![Design preview for the Social proof section coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Testimonials Grid Section coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome
 
